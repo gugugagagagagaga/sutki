@@ -246,7 +246,7 @@ class PacmanGame:
                     self.enemies.append([x, y])
                     self.map[y][x] = ' '
         self.map[self.player_y][self.player_x] = self.player_icon
-        self.score += 10 * self.current_leveld
+        self.score += 10 * self.current_level
         
     def display(self):
         print("\n" * 5)
