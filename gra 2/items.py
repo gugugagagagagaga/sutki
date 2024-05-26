@@ -1,10 +1,10 @@
 import random
 
 class Item:
-    def __init__(self, name, effect, quantity=1):  # Dodaj atrybut quantity
+    def __init__(self, name, effect, quantity=1):  
         self.name = name
         self.effect = effect
-        self.quantity = quantity  # Ustaw domyślną wartość quantity na 1
+        self.quantity = quantity  
 
     def use(self, target):
         if self.effect == "heal":
