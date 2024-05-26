@@ -12,7 +12,7 @@ class NPC:
         accept_quest = input("Do you accept this quest? [Y]es/[N]o: ").lower()
         if accept_quest == 'y':
             display_message("Quest accepted!")
-            # Tutaj możesz dodać logikę związana z akceptacją zadania
+         
         else:
             display_message("Maybe next time!")
 
@@ -25,7 +25,7 @@ class Map:
     def explore_location(self, location, progress, player):
         display_message(f"Exploring the {location}...")
         
-        # Losowanie przeciwnika lub NPC
+    
         encounter = random.choice(["enemy", "npc"])
         
         if encounter == "enemy":
@@ -34,7 +34,7 @@ class Map:
             self.encounter_npc(location, player)
 
     def encounter_enemy(self, location, player):
-        # Implementacja spotkania z przeciwnikiem
+        
         pass
 
     def encounter_npc(self, location, player):
